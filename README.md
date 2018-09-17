@@ -1,2 +1,2 @@
 # PUI
-For PUI/SSUI lab
+For PUI lab
