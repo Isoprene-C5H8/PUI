@@ -1,0 +1,113 @@
+/**Overall**/
+	.num{
+		font-family: "Hiragino Kaku Gothic Pro",Helvetica,Arial,Sans-serif;
+	}
+	.text{
+		font-family: Skia,Helvetica,Arial,Sans-serif;
+	}
+
+	/**header**/
+
+		#BBBS-logo{
+			position:absolute;
+			top:25px;
+			left:80px;
+			margin: 0;
+			font-family:"Snell Roundhand", fantacy;
+			font-weight:bold;
+			font-size: 48px;
+			color: #4A1504;
+		}
+		/**title image**/
+		#title-image-container{
+			width:100%;
+			height:100px;
+			background-color: #fff;
+			opacity:0.3;
+			position: absolute;
+			top:0;
+			overflow: hidden;
+		}
+
+
+
+		/**icons**/
+		#topright-icons{
+			position: absolute;	
+			top:32px;
+			right: 304px;
+		}
+
+		.icons{
+			width:36px;
+			height:36px;
+			cursor: pointer;
+		}
+
+		#Search-icon{
+			position:absolute;
+			top: 0;
+			left: 0;
+		}
+
+		#Profile-icon{
+			position:absolute;
+			top: 0;
+			left: 94px;
+		}
+
+		#Cart-icon{
+			position:absolute;
+			top: 0;
+			left: 188px;
+		}
+
+	
+
+	/**content**/
+	.Background-image{
+		z-index: -10;
+		width: 100%;
+		position: fixed;
+		overflow: hidden;
+		background-color: #DBBCB2;
+	}
+
+	.body{
+		scroll-behavior: 
+		background-image: url(./i/Background-image.jpg) no-repeat fixed;
+		width: 100%;
+		height:100%;
+		background-size: cover;
+	}
+
+	.GoToShop-button{
+		height: 66px;
+		width:190px;
+		cursor: pointer;
+		
+		position:absolute;
+		margin-top:50%;
+		margin-left:45%;
+		margin-right:45%;
+		z-index: 0;
+	}
+
+	.GoToShop-button-background{
+		position: absolute;
+		height: 66px;
+		width:190px;
+		background-color: #fff;
+		opacity: 0.7;
+	}
+
+	.GoToShop-text{
+		position: absolute;
+		width:190px;
+		text-align: center;				
+		line-height: 66px;
+		color: #4A1504;
+		font-size:18px;
+		z-index: 1;
+		
+	}

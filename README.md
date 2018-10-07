@@ -1,2 +1,0 @@
-# PUI
-For PUI lab
