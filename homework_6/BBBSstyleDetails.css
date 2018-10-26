@@ -1,0 +1,297 @@
+	/**Overall**/
+	.num{
+		font-family: "Hiragino Kaku Gothic Pro",Helvetica,Arial,Sans-serif;
+	}
+	.text{
+		font-family: Skia,Helvetica,Arial,Sans-serif;
+	}
+
+	/**header**/
+
+		#BBBS-logo{
+			position:absolute;
+			top:25px;
+			left:80px;
+			margin: 0;
+			font-family:"Snell Roundhand", fantacy;
+			font-weight:bold;
+			font-size: 48px;
+			color: #4A1504;
+		}
+		/**title image**/
+		#title-image-container{
+			width:100%;
+			height:100px;
+			overflow: hidden;
+			position: absolute;
+			top:0;
+		}
+
+		#title-image{
+			width:100%;
+			margin: 0 auto;
+		}
+
+		/**icons**/
+		#topright-icons{
+			position: absolute;	
+			top:32px;
+			right: 304px;
+		}
+
+		.icons{
+			width:36px;
+			height:36px;
+			cursor: pointer;
+		}
+
+		#Search-icon{
+			position:absolute;
+			top: 0;
+			left: 0;
+		}
+
+		#Profile-icon{
+			position:absolute;
+			top: 0;
+			left: 94px;
+		}
+
+		#Cart-icon{
+			position:absolute;
+			top: 0;
+			left: 188px;
+		}
+
+	
+
+	/**content**/
+
+
+	#main-content-container-detail{
+		width: 942px;
+		position:relative;
+		margin-top:192px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	/**navigation bar**/
+		#navigation-bar-container{
+			position:absolute;
+			top:0;
+			left:0;
+		}
+
+			.navigation-bar{
+				font-size:16px;
+				color:#43467F;
+				text-decoration: none;
+			}
+
+
+
+	/**The left side**/
+	#leftside-container{
+		position: absolute;
+		left:0;
+		top:38px;
+		width:436px;
+	}
+		/**The item image**/
+		.item-picture-detail{
+			width: 436px;
+			height: 436px;
+			/**position: absolute;
+			left: 0;
+			top: 0;**/
+		}
+		/**the description paragraph**/
+		.item-descriptions{
+			font-family: "Apple SD Gothic Neo",Helvetica,Arial,Sans-serif;
+			font-size: 18px;
+			color: #2C2726;
+			/**position: absolute;
+			left: 0;
+			top: 454px;**/
+		}
+
+		/**The baked time**/
+		.baked-time{
+			font-size: 18px;
+			color:#C05717;
+			}
+		.text-baked-time-2{
+			font-size: 16px;
+		}
+		
+		/**The best before time**/
+		.best-before{
+			font-size: 18px;
+			color:#9E9894;
+			}
+		.text-best-before-time{
+			font-size: 16px;
+		}
+
+		/**The ingredients**/
+		.ingredients{
+			font-size: 18px;
+			color:#9E9894;
+			}
+		.dropdown-icon{
+			width:12px;
+			cursor: pointer;
+		}
+
+	/**The right side**/
+	#rightside-container{
+		position: absolute;
+		left:540px;
+		top: 38px;
+		width: 400px;
+	}
+
+		/**The item name and proce**/
+		.item-name{
+			font-weight: bold;
+			font-size: 36px;
+			color: #2C2726;
+			position: absolute;
+			top:0;
+			left: 0;
+			margin:0;
+		}
+
+		.item-price{
+			font-size: 18px;
+			color: #2C2726;
+			position:absolute;
+			top:47px;
+			margin:0;
+		}
+
+		/**The item quantity**/
+		.Qty{
+			position: absolute;
+			top: 110px;
+
+		}
+
+			.Qty-text{
+				color: #9E9894;
+				font-size:18px;
+				margin-bottom: 0;
+			}
+
+			.Qty-options-container{
+				margin-top: 6px;
+			}
+
+			.Qty-options{
+				width: 66px;
+				height: 66px;
+				border: 1px solid #9E9894;
+				margin-top: 0;
+				margin-right: 10px;
+				text-align: center;				
+				line-height: 66px;	
+				color: #2C2726;
+				font-size:18px;
+				float: left;
+				cursor: pointer;
+			}
+
+			.Border{
+				border:2px solid #2C2726;
+			}
+
+		/**The item glazing**/
+		.Glazing{
+			position: absolute;
+			top: 250px;
+
+		}
+
+			.Glazing-text{
+				color: #9E9894;
+				font-size:18px;
+				margin-bottom: 0;
+			}
+
+			.Glazing-options-container{
+				margin-top: 6px;
+			}
+
+			.Glazing-options{
+				height: 66px;
+				border: 1px solid #9E9894;
+				margin-top: 0;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				text-align: center;				
+				line-height: 66px;	
+				color: #2C2726;
+				font-size:18px;
+				float: left;
+				cursor: pointer;
+			}
+
+		/**The shipping prompts**/
+		.Shipping{
+			position: absolute;
+			top: 476px;
+
+		}
+
+		.Shipping-text{
+			font-size: 18px;
+			color:#9E9894;
+			margin:0;
+			}
+		.shipping-time{
+			font-size: 16px;
+		}
+
+		.location{
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.dropdown-icon{
+			width:12px;
+		}
+
+		/**The buttons section**/
+		.purchase-button-container{
+			position: absolute;
+			top: 520px;
+		}
+
+		.purchase-button{
+			height: 66px;
+			width:190px;
+			background-color: #F5A623;
+			margin-top: 0;
+			margin-right: 10px;
+			text-align: center;				
+			line-height: 66px;	
+			color: #fff;
+			font-size:18px;
+			float: left;
+			cursor: pointer;
+		}
+
+		.AddToCart-button{
+			height: 66px;
+			width:190px;
+			background-color: #9E9894;
+			margin-top: 0;
+			margin-right: 10px;
+			text-align: center;				
+			line-height: 66px;	
+			color: #fff;
+			font-size:18px;
+			float: left;
+			cursor: pointer;
+		}

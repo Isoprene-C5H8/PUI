@@ -1,0 +1,159 @@
+		/**Overall**/
+	.num{
+		font-family: "Hiragino Kaku Gothic Pro",Helvetica,Arial,Sans-serif;
+	}
+	.text{
+		font-family: Skia,Helvetica,Arial,Sans-serif;
+	}
+
+	/**header**/
+
+		#BBBS-logo{
+			position:absolute;
+			top:25px;
+			left:80px;
+			margin: 0;
+			font-family:"Snell Roundhand", fantacy;
+			font-weight:bold;
+			font-size: 48px;
+			color: #4A1504;
+		}
+		/**title image**/
+		#title-image-container{
+			width:100%;
+			height:100px;
+			overflow: hidden;
+			position: absolute;
+			top:0;
+		}
+
+		#title-image{
+			width:100%;
+			margin: 0 auto;
+		}
+
+		/**icons**/
+		#topright-icons{
+			position: absolute;	
+			top:32px;
+			right: 304px;
+		}
+
+		.icons{
+			width:36px;
+			height:36px;
+			cursor: pointer;
+		}
+
+		#Search-icon{
+			position:absolute;
+			top: 0;
+			left: 0;
+		}
+
+		#Profile-icon{
+			position:absolute;
+			top: 0;
+			left: 94px;
+		}
+
+		#Cart-icon{
+			position:absolute;
+			top: 0;
+			left: 188px;
+		}
+
+	
+
+	/**Browsing**/
+
+
+	#main-content-container{
+		width: 860px;
+		position:relative;
+		margin-top:192px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	/**navigation bar**/
+		#navigation-bar-container{
+			position:absolute;
+			top:0;
+			left:0;
+		}
+
+			.navigation-bar{
+				font-family: Skia,Sans-serif;
+				font-size:16px;
+				color:#43467F;
+				text-decoration: none;
+			}
+
+
+		#products-container{
+			position: absolute;
+			top:30px;
+		}
+			/**individual container**/
+			#Original-container{
+				position:absolute;
+				top:0;
+				left:0;
+			}
+
+			#Blackberry-container{
+				position:absolute;
+				top:0;
+				left:296px;
+			}
+			#Walnut-container{
+				position:absolute;
+				top:0;
+				left:593px;
+			}
+
+			#GlutenFree-container{
+				position:absolute;
+				top:362px;
+				left:0;
+			}
+
+			#PumpkinSpice-container{
+				position:absolute;
+				top:362px;
+				left:296px;
+			}
+
+			#Caramel-container{
+				position:absolute;
+				top:362px;
+				left:593px;
+			}
+
+				/**in the container**/
+				.item-picture-container{
+					height: 267px;
+					width: 267px;
+					overflow: hidden;
+				}
+
+				.item-picture{
+					height:267px;
+				}
+
+				.item-name{
+					font-family: Skia,Sans-serif;
+					font-weight: bold;
+					font-size: 20px;
+					color: #2C2726;
+					position:absolute;
+					top:266px;
+				}
+
+				.item-price{
+					font-family:"Hiragino Karu Gothic Pro",Sans-serif;
+					font-size: 16px;
+					color: #2C2726;
+					position:absolute;
+					top:294px;
+				}
