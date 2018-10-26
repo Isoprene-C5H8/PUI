@@ -1,11 +1,11 @@
 $(function(){
 
-   $(".Qty-options").click(function(){
+   /**$(".Qty-options").click(function(){
    		
    		//$(this).css("border","3px solid #2C2726");
    		$(this).toggleClass("Border");
    		
-   	});
+   	});**/
 
    
 	
@@ -17,12 +17,16 @@ $(function(){
   		localStorage.setItem("Qty", JSON.stringify("1"));
   		$(".item-picture-detail").attr("src", "i/01-Original.jpg");
   		$(".item-price").text("$2.99");
+  		$(this).addClass("Border");
+  		$(this).siblings().removeClass("Border");
   	});
 
   	$("#Qty-3").click(function(){
   		localStorage.setItem("Qty", JSON.stringify("3"));
   		$(".item-picture-detail").attr("src", "i/Background-image.jpg");
   		$(".item-price").text("$8.97");
+  		$(this).addClass("Border");
+  		$(this).siblings().removeClass("Border");
   	});
 	
    
