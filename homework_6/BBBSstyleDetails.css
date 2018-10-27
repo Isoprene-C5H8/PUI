@@ -201,9 +201,7 @@
 				cursor: pointer;
 			}
 
-			.Border{
-				border:2px solid #2C2726;
-			}
+			
 
 		/**The item glazing**/
 		.Glazing{
@@ -238,6 +236,10 @@
 				cursor: pointer;
 			}
 
+			.Border{
+				border:2px solid #2C2726;
+			}
+			
 		/**The shipping prompts**/
 		.Shipping{
 			position: absolute;
