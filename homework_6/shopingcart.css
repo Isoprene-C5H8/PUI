@@ -205,4 +205,45 @@
 					width: 24px;
 					height:24px;
 				}
+		/**The right side**/
+		#rightside-container{
+			position: absolute;
+			left:640px;
+			top: 38px;
+			width: 386px;
+			height: 680px;
+			background-color: #F7F4F350;
+		}
 
+		.total-price-text{
+			position: absolute;
+			left:38px;
+			font-weight: bold;
+			top: 68px;
+			font-size: 24px;
+			color:#2C2726;
+		}
+
+		.total-price{
+			position: absolute;
+			right:38px;
+			font-weight: bold;
+			top: 62px;
+			font-size: 24px;
+			color:#2C2726;
+		}
+
+		.checkout-btn{
+			position: absolute;
+			height: 66px;
+			width: 310px;
+			background-color: #F5A623;
+			top: 168px;
+			text-align: center;				
+			line-height: 66px;	
+			color: #fff;
+			font-size:24px;
+			margin-left: 38px;
+			font-weight: bold;
+			cursor: pointer;
+		}
