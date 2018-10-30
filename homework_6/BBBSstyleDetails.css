@@ -190,7 +190,7 @@
 			.Qty-options{
 				width: 66px;
 				height: 66px;
-				border: 1px solid #9E9894;
+				border: 2px solid #9E9894;
 				margin-top: 0;
 				margin-right: 10px;
 				text-align: center;				
@@ -200,7 +200,19 @@
 				float: left;
 				cursor: pointer;
 			}
-
+			.Qty-options-border{
+				width: 66px;
+				height: 66px;
+				border: 2px solid #2C2726;
+				margin-top: 0;
+				margin-right: 10px;
+				text-align: center;				
+				line-height: 66px;	
+				color: #2C2726;
+				font-size:18px;
+				float: left;
+				cursor: pointer;
+			}
 			
 
 		/**The item glazing**/
@@ -222,7 +234,7 @@
 
 			.Glazing-options{
 				height: 66px;
-				border: 1px solid #9E9894;
+				border: 2px solid #9E9894;
 				margin-top: 0;
 				margin-bottom: 10px;
 				margin-right: 10px;
@@ -234,12 +246,26 @@
 				font-size:18px;
 				float: left;
 				cursor: pointer;
+				display: inline-block;
 			}
 
-			.Border{
+			.Glazing-options-border{
 				border:2px solid #2C2726;
+				height: 66px;
+				margin-top: 0;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				text-align: center;				
+				line-height: 66px;	
+				color: #2C2726;
+				font-size:18px;
+				float: left;
+				cursor: pointer;
+				display: inline-block;
 			}
-			
+
 		/**The shipping prompts**/
 		.Shipping{
 			position: absolute;
