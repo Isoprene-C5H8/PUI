@@ -104,12 +104,16 @@
 				top:0;
 				left: 0;
 				margin:0;
+				color: #4A1504;
 			}
 
 			/*Each item cards*/
 			.items-in-cart{
 				top:68px;
+				height: 163px;
 				position: relative;
+				border-bottom: 1px solid #EBE0DA;
+				margin-bottom: 38px;
 			}
 
 				/*the picture in item cards*/
@@ -130,6 +134,7 @@
 					float: left;
 					height: 126px;
 				}
+				
 				/*Things in item information*/
 					.item-name{
 						position: absolute;
@@ -179,3 +184,25 @@
 							color:#2C2726;
 							display: inline-block;
 						}
+				
+
+				/*Right side of the item cards*/
+				.item-price{
+					position: absolute;
+					right:50px;
+					font-weight: bold;
+					/*float: right;
+					margin-right: 70px;*/
+					top: -6px;
+					font-size: 24px;
+					color:#2C2726;
+				}
+
+				.deletebtn{
+					position: absolute;
+					right: 0;
+					/*float: right;*/
+					width: 24px;
+					height:24px;
+				}
+
