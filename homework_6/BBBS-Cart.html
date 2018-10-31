@@ -9,7 +9,7 @@
 		 <link rel="stylesheet" type="text/css" href="shopingcart.css"/>
 		 <!-- javascript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="test.js" type="text/javascript"></script>
+		<script src="shoppingcart.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -45,22 +45,29 @@
 			<div id="leftside-container">
 				<p class="shopping-cart text">Shopping cart</p>
 				<div class="items-in-cart">
+
 					<!-- item picture at left -->
 					<img class="small-item-picture" src="i/01-Original.jpg" alt="a picture of the item">
+
 					<!-- item informations at middle -->
 					<div class="item-information">
 						<p class="item-name text">Original</p>
+
+						<!-- Shows the quantity -->
 						<div class="qty-block">
 							<span class="qty num" id="qty-1">1</span>
 							<span class="text-qty text">qty</span>
 						</div>
+
+						<!-- Shows the glazing -->
 						<div class="glazing-block">
 							<span class="glazing text" id="glazing-1">Noun</span>
 							<span class="text-glazing text"> Glazing</span>
 						</div>
 					</div>	
+					
 					<!-- item price at right -->
-					<p class="item-price num">$2.99</p>
+					<div class="item-price-block num"><span >$</span><span class="item-price">2.99</span></div>
 					<img class="deletebtn" src="i/cross.svg">
 					
 					
@@ -69,8 +76,10 @@
 
 			<!--The right side content-->
 			<div id="rightside-container">
+				<!-- The total price -->
 				<p class="total-price-text text">Total</p>
 				<p class="total-price num">$2.99</p>
+				<!-- The checkout button -->
 				<div class="checkout-btn text">CHECK OUT</div>
 			</div>
 

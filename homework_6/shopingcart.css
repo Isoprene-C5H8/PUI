@@ -92,7 +92,7 @@
 			position: absolute;
 			left:0;
 			top:38px;
-			width:600px;
+			width:550px;
 		}
 
 			/**The text "shiping cards"**/
@@ -187,7 +187,7 @@
 				
 
 				/*Right side of the item cards*/
-				.item-price{
+				.item-price-block{
 					position: absolute;
 					right:50px;
 					font-weight: bold;
@@ -214,36 +214,37 @@
 			height: 680px;
 			background-color: #F7F4F350;
 		}
+			/*The total price*/
+			.total-price-text{
+				position: absolute;
+				left:38px;
+				font-weight: bold;
+				top: 68px;
+				font-size: 24px;
+				color:#2C2726;
+			}
 
-		.total-price-text{
-			position: absolute;
-			left:38px;
-			font-weight: bold;
-			top: 68px;
-			font-size: 24px;
-			color:#2C2726;
-		}
+			.total-price{
+				position: absolute;
+				right:38px;
+				font-weight: bold;
+				top: 62px;
+				font-size: 24px;
+				color:#2C2726;
+			}
 
-		.total-price{
-			position: absolute;
-			right:38px;
-			font-weight: bold;
-			top: 62px;
-			font-size: 24px;
-			color:#2C2726;
-		}
-
-		.checkout-btn{
-			position: absolute;
-			height: 66px;
-			width: 310px;
-			background-color: #F5A623;
-			top: 168px;
-			text-align: center;				
-			line-height: 66px;	
-			color: #fff;
-			font-size:24px;
-			margin-left: 38px;
-			font-weight: bold;
-			cursor: pointer;
-		}
+			/*The checkout button*/
+			.checkout-btn{
+				position: absolute;
+				height: 66px;
+				width: 310px;
+				background-color: #F5A623;
+				top: 168px;
+				text-align: center;				
+				line-height: 66px;	
+				color: #fff;
+				font-size:24px;
+				margin-left: 38px;
+				font-weight: bold;
+				cursor: pointer;
+			}
