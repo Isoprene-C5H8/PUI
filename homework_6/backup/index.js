@@ -45,7 +45,7 @@ $(document).ready(function() {
 
   $("Qty-1").click(function(){
       Qty = 1;
-      $(".item-picture-detail").attr("src", "i/01-Original.jpg");
+      $(".item-picture-detail").attr("src", "Assests/01-Original.jpg");
       //$(".item-price").text("$2.99");
       $(this).addClass("Border");
       $(this).siblings().removeClass("Border");
@@ -53,7 +53,7 @@ $(document).ready(function() {
   
   $("Qty-3").click(function(){
       Qty = 3;
-      $(".item-picture-detail").attr("src", "i/01-Original.jpg");
+      $(".item-picture-detail").attr("src", "Assests/01-Original.jpg");
       //$(".item-price").text("$2.99");
       $(this).addClass("Border");
       $(this).siblings().removeClass("Border");

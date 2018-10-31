@@ -6,7 +6,9 @@ $(document).ready(function() {
    		$(this).toggleClass("Border");
    		
    	});**/
-
+   	function setQty (){
+   		qty = $(this).val();
+   	}
    
 	// get the savedAnimal in local storage if one exists
   var qty = JSON.parse(localStorage.getItem("savedQty"));

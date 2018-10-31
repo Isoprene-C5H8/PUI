@@ -6,10 +6,10 @@
 			Original Cinnamon Rolls
 		</title>
 		 <!-- styles -->
-		 <link rel="stylesheet" type="text/css" href="shopingcart.css"/>
+		 <link rel="stylesheet" type="text/css" href="../CSS/shopingcart.css"/>
 		 <!-- javascript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="shoppingcart.js" type="text/javascript"></script>
+		<script src="../JS/shoppingcart.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -18,11 +18,11 @@
 		<header>
 			<!--The top background image-->
 			<div id="title-image-container">
-				<img id="title-image" src="i/BackgroundTop.jpg" alt="The title picture of Bun Bun Bake Shop"/>
+				<img id="title-image" src="../Assets/BackgroundTop.jpg" alt="The title picture of Bun Bun Bake Shop"/>
 			</div>
 
 			<!--the logo-->
-			<a href="BBBS-homepage.html">
+			<a href="../BBBS-homepage.html">
 				<p id="BBBS-logo">
 					Bun Bun Bake Shop
 				</p>
@@ -31,9 +31,9 @@
 			<!--The top rihgt bar: including icons of search, profile and cart-->	
 			<div id="topright-icons">
 				<!--Attributions: BIGMK_APP_ICON http://www.iconfont.cn/collections/detail?spm=a313x.7781069.0.da5a778a4&cid=10492-->
-				<img class="icons" id="Search-icon" src="i/Search.svg" alt="this is a search icon"/>
-				<img class="icons" id="Profile-icon" src="i/profile.svg" alt="this is a profile icon"/>
-				<img class="icons" id="Cart-icon" src="i/Cart.svg" alt="this is a cart icon"/>
+				<img class="icons" id="Search-icon" src="../Assets/Search.svg" alt="this is a search icon"/>
+				<img class="icons" id="Profile-icon" src="../Assets/profile.svg" alt="this is a profile icon"/>
+				<img class="icons" id="Cart-icon" src="../Assets/Cart.svg" alt="this is a cart icon"/>
 			</div>
 		</header>
 
@@ -44,10 +44,11 @@
 			<!--The left side content-->
 			<div id="leftside-container">
 				<p class="shopping-cart text">Shopping cart</p>
+				<p class="empty-alert text">There's nothing in your cart, go add some!</p>
+				<!-- Item cards -->
 				<div class="items-in-cart">
-
 					<!-- item picture at left -->
-					<img class="small-item-picture" src="i/01-Original.jpg" alt="a picture of the item">
+					<img class="small-item-picture" src="../Assets/01-Original.jpg" alt="a picture of the item">
 
 					<!-- item informations at middle -->
 					<div class="item-information">
@@ -68,7 +69,7 @@
 					
 					<!-- item price at right -->
 					<div class="item-price-block num"><span >$</span><span class="item-price">2.99</span></div>
-					<img class="deletebtn" src="i/cross.svg">
+					<img class="deletebtn" src="../Assets/cross.svg">
 					
 					
 				</div>
