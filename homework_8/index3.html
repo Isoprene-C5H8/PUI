@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Roman Tomber Truss</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="Assets/JS/main.js" type="text/javascript"></script>
+
+	<!-- Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Anime.js -->
+	<script src="Assets/JS/Library/anime.min.js"></script>
+
+	<!-- CSS Styles -->
+	<link rel="stylesheet" href="Assets/CSS/main.css">
+</head>
+
+<body>
+	<!-- Bootstrap container -->
+	<div class="container-fluid">
+		<!-- First section: The homepage background image and the title -->
+		<section id="slide-1" class="background-slide">
+			<!-- First image will slightly move when scroll -->
+			<!-- The background image moves up by 10% between the start of the scrolling and when the bottom of the #slide-1 hits the top of the viewport -->
+			<div id="img1" class="img"
+				data-center="background-position: 50% 0vh;"
+				data-top-bottom="background-position: 50% -10vh;"
+				data-anchor-target="#slide-1">
+				<!-- Title and text on the slide -->
+				<!-- Make the title fade away when scroll to the next slide (start when the top of title hot 20% of the the view height and complete when the top of it hit 2% of the view height) -->
+				<div id="caption-1" class="caption" 
+					data-20p-top="opacity: 1"
+					data-2p-top="opacity: 0"
+					data-anchor-target="#slide-1 h3">
+
+					<h3 class="title brown">EXPLORE THE ROMAN TIMBER TRUSS</h3>
+					<p  class="introductions brown">
+						Like all buildings which date back beyond the nineteenth century, before the use of industrialized materials like iron and steel as major structural components, great pieces of lumber were hewn to form magnificent structural elements. 
+						Dates back to the Roman empire, people used those timber to build roof truss which is light and strong to bear the weight of the roof and can expand a large span across the main room of a church.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Second section: The title bar of transition -->
+		<section id="slide-2">
+			<!-- Title that rotate -->
+			<!-- <div id="rotating-bar-1" class="rotating-bar" 
+				data-0="background-color:rgb(50,80,67);transform:rotate(0deg);opacity: 0;" 
+				data-40p="background-color:rgb(67,25,0);transform:rotate(360deg);opacity: 0.8;">
+				<h5 class="white center">SEE MORE ABOUT THE TRUSS</h5>
+			</div> -->
+
+			<!-- Background color of the title changes with scrolling -->
+			<div id="caption-2" class="caption"
+				data-0="background-color:rgb(1,27,59);"
+				data-top="background-color:(0,0,0);"
+				data-anchor-target="#slide-2">
+				<!-- The title fades in and out with scrolling -->
+				<h5 class="white"
+					data--30p-bottom="opacity: 0"
+					data-70p="opacity: 1"
+					data-20p-top="opacity: 1"
+					data-10p-top="opacity: 0"
+					data-anchor-target="#slide-2 h5">
+					WHAT IS THE TRUSS?
+				</h5>
+			</div>			
+		</section>
+
+		
+		<section id="slide-3" class="background-slide">
+			<!-- The background image will slightly move upward when scrolling -->
+			<div id="img2" class="img"
+				data-center="background-position: 0px 50%; width: 100%; top: 0%; left: 0%;"
+				data-bottom-top="background-position: 0px 40%;background-attachment: fixed;"
+				data-top-bottom="background-position: -40px 50%; width: 156%; top: -28%; left: -28%;"
+				data-anchor-target="#slide-3">
+				<div id="caption-3" class="caption"
+					data-106-top="opacity: 0"
+                    data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"
+                    data--30p-top="opacity: 1;"
+                    data--60p-top="opacity: 0;"
+                    data-anchor-target="#slide-3">
+                    <h5 class="title brown">TRUSS</h5>
+					<p  class="introductions brown">
+						Like all buildings which date back beyond the nineteenth century, before the use of industrialized materials like iron and steel as major structural components, great pieces of lumber were hewn to form magnificent structural elements. 
+						Dates back to the Roman empire, people used those timber to build roof truss which is light and strong to bear the weight of the roof and can expand a large span across the main room of a church.
+					</p>
+				</div>
+			</div>			
+		</section>
+	</div>
+		
+
+
+	<!-- Import Skroller.js -->
+	<script type="text/javascript" src="Assets/JS/Library/skrollr.js"></script>
+	<script type="text/javascript">
+		var s = skrollr.init();//Initialize
+	</script>
+
+</body>
+
