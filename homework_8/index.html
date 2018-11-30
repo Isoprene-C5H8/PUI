@@ -1,0 +1,69 @@
+<!-- My homework 8 - Yihong -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Roman Tomber Truss</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="Assets/CSS/styles.css">
+
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="Assets/JS/main.js" type="text/javascript"></script>
+
+	<!-- Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Anime.js -->
+	<script src="Assets/JS/Library/anime.min.js"></script>
+</head>
+
+<body>
+	<!--This is the container for the grid in Bootstrap-->
+	<div class="container-fluid">
+		
+		
+			<!-- Header -->
+			<div class="row">
+				<div class="col-sm-4 test">Just a try</div>
+				<div class="col-sm-4 test">Just a try</div>
+				<div class="col-sm-4 test">Just a try</div>
+			</div>
+		<div class="row">
+			<!-- try to write skroller inside -->
+			<div id="slides-container">
+				<!-- !!!!Start writing here!!!! -->
+				
+					<!-- First blackgroung image, the  -->
+					<div id="slide-1" class="slide">
+						<!-- <div class="caption"> -->
+							<p class="title brown">EXPLORE THE ROMAN TIMBER TRUSS</p>
+							<p class="introductions brown">
+								Like all buildings which date back beyond the nineteenth century, before the use of industrialized materials like iron and steel as major structural components, great pieces of lumber were hewn to form magnificent structural elements. 
+								Dates back to the Roman empire, people used those timber to build roof truss which is light and strong to bear the weight of the roof and can expand a large span across the main room of a church.
+							</p>
+					<!-- 	</div> -->
+					</div>
+					<div id="slide-2" class="slide"></div>
+				
+
+			</div>
+		</div>
+		
+
+	</div>
+
+	<!-- Test for skroller, scrolling effect -->
+	<div data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" 
+     data-500="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);">WOOOT</div>
+
+	<!-- Import Skroller.js -->
+	<script type="text/javascript" src="Assets/JS/Library/skrollr.min.js"></script>
+	<script type="text/javascript">
+		var s = skrollr.init();//Initialize
+	</script>
+</body>

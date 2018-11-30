@@ -1,0 +1,89 @@
+html, body {
+		height:100%;
+	}
+
+.img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#img1{
+	
+	/*width: 100vw;*/
+	background:url("../images/BackgroundImage.jpg") no-repeat center center;
+	background-size: cover;	
+}
+
+#img2{
+	/*width: 100vw;*/
+	background:url("../images/SectionDrawingBackground.png") no-repeat center center;
+	background-size: cover;	
+}
+
+body{
+	/*Use vw to make text responsive to screen*/
+	font-family: Cambria Serif;
+}
+
+p{
+	font-size:1.5em;
+}
+
+h5{
+	font-size: 2em;
+	position: relative;
+	/*margin-top: 10%;*/
+	margin-top: 0;
+	margin-bottom: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+	text-align: center;
+	width: 80%;
+}
+
+.brown{
+	color: #432B20;
+}
+
+.white{
+	color:#fff;
+}
+
+.center{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.title{
+	font-size: 3em;
+	position: relative;
+	/*margin-top: 10%;*/
+	margin-top: 0;
+	margin-bottom: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+	text-align: center;
+	width: 80%;
+	
+	/*Opacity will inherent to child and make the text also transarent, so I use RGB alpha to make transparent background*/
+	background-color: rgba(250, 250, 250, 0.5);
+}
+
+.introductions{
+	position: relative;
+	margin: 0 10%;
+	padding: 2%;
+	/*Opacity will inherent to child and make the text also transarent, so I use RGB alpha to make transparent background*/
+	background-color: rgba(250, 250, 250, 0.5);
+}
+
+#rotating-bar-1{
+	height: 10vh;
+	width: 100%;
+}
