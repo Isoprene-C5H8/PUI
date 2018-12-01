@@ -1,14 +1,10 @@
-<!-- My homework 8 - Yihong -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
 	<title>Roman Tomber Truss</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Styles -->
-	<link rel="stylesheet" href="Assets/CSS/styles.css">
 
 	<!--jQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,50 +16,263 @@
 
 	<!-- Anime.js -->
 	<script src="Assets/JS/Library/anime.min.js"></script>
+
+	<!-- CSS Styles -->
+	<link rel="stylesheet" href="Assets/CSS/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather" rel="stylesheet">
 </head>
 
-<body>
-	<!--This is the container for the grid in Bootstrap-->
+<body id="root">
+	<!-- Bootstrap container -->
 	<div class="container-fluid">
-		
-		
-			<!-- Header -->
-			<div class="row">
-				<div class="col-sm-4 test">Just a try</div>
-				<div class="col-sm-4 test">Just a try</div>
-				<div class="col-sm-4 test">Just a try</div>
-			</div>
-		<div class="row">
-			<!-- try to write skroller inside -->
-			<div id="slides-container">
-				<!-- !!!!Start writing here!!!! -->
-				
-					<!-- First blackgroung image, the  -->
-					<div id="slide-1" class="slide">
-						<!-- <div class="caption"> -->
-							<p class="title brown">EXPLORE THE ROMAN TIMBER TRUSS</p>
-							<p class="introductions brown">
-								Like all buildings which date back beyond the nineteenth century, before the use of industrialized materials like iron and steel as major structural components, great pieces of lumber were hewn to form magnificent structural elements. 
-								Dates back to the Roman empire, people used those timber to build roof truss which is light and strong to bear the weight of the roof and can expand a large span across the main room of a church.
-							</p>
-					<!-- 	</div> -->
-					</div>
-					<div id="slide-2" class="slide"></div>
-				
+		<!-- First section: The homepage background image and the title -->
+		<section id="slide-1" class="background-slide">
+			<!-- First image will slightly move when scroll -->
+			<!-- The background image moves up by 10% between the start of the scrolling and when the bottom of the #slide-1 hits the top of the viewport -->
+			<div id="img-homepage" class="img"
+				data-center="background-position: 50% 0vh;"
+				data-top-bottom="background-position: 50% -10vh;"
+				data-anchor-target="#slide-1">
+				<!-- Title and text on the slide -->
+				<!-- Make the title fade away when scroll to the next slide (start when the top of title hot 20% of the the view height and complete when the top of it hit 2% of the view height) -->
+				<div id="caption-1" class="caption"
+					data-30p-top="opacity: 0;"
+					data--10p-top="opacity: 1;"
+					data--30p-top="opacity: 0;"
+					data-anchor-target="#slide-1">
 
+					<h1 class="title">EXPLORE THE ROMAN TIMBER TRUSS</h1>
+					<p  class="introductions">
+						Like all buildings which date back beyond the nineteenth century, before the use of industrialized materials like iron and steel as major structural components, great pieces of lumber were hewn to form magnificent structural elements. 
+						Dates back to the Roman empire, people used those timber to build roof truss which is light and strong to bear the weight of the roof and can expand a large span across the main room of a church.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Second section: The title bar of transition -->
+		<div id="slide-2">
+			<!-- Title that rotate -->
+			<!-- <div id="rotating-bar-1" class="rotating-bar"
+				data-0="background-color:rgb(50,80,67);transform:rotate(0deg);opacity: 0;"
+				data-40p="background-color:rgb(67,25,0);transform:rotate(360deg);opacity: 0.8;">
+				<h5 class="white center">SEE MORE ABOUT THE TRUSS</h5>
+			</div> -->
+
+			<!-- Background color of the title changes with scrolling -->
+			<div id="bcg-color-blue"
+				data-0="background-color:rgb(71, 123, 192);"
+				data-top="background-color:rgb(129, 121, 115);">
+				<div id="caption-2" class="caption"
+					data-0="background-color:rgb(74, 42, 48);width:50%;"
+					data-top="background-color:(20,20,20);width:100%;"
+					data-anchor-target="#slide-2">
+					<!-- The title fades in and out with scrolling -->
+					<h5 class="white"
+						data--30p-bottom="opacity: 0"
+						data-70p="opacity: 1"
+						data-20p-top="opacity: 1"
+						data-2p-top="opacity: 0"
+						data-anchor-target="#slide-2">
+						What Is The Truss?
+					</h5>
+				</div>
 			</div>
 		</div>
-		
 
+
+		<section id="slide-3" class="background-slide">
+			<!-- The background image will slightly move upward when scrolling -->
+			<div id="img-tower" class="img"
+				data-center="background-position: 0px 50%; width: 100%; top: 0%; left: 0%;"
+				data-bottom-top="background-position: 0px 40%;background-attachment: fixed;"
+				data-top-bottom="background-position: -40px 50%; width: 156%; top: -28%; left: -28%;"
+				data-anchor-target="#slide-3">
+				<div id="caption-3" class="caption"
+					data-30p-top="opacity: 0;"
+          data-bottom="opacity: 1;"
+					data--40p-top="opacity: 0;"
+          data-anchor-target="#slide-3">
+          <h5 class="title brown">Truss</h5>
+					<p class="introductions">
+						Like all buildings which date back beyond the nineteenth century, before the use of industrialized materials like iron and steel as major structural components, great pieces of lumber were hewn to form magnificent structural elements. 
+						Dates back to the Roman empire, people used those timber to build roof truss which is light and strong to bear the weight of the roof and can expand a large span across the main room of a church.
+					</p>
+				</div>
+			</div>
+		</section>
 	</div>
 
-	<!-- Test for skroller, scrolling effect -->
-	<div data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" 
-     data-500="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);">WOOOT</div>
+	<!-- <span class="letters">Difference between architectures in the Song Dynasty and the Qing Dynasty</span> -->
+
+	<!--Page: The Comparison of Architecture in the Song Dynasty and the Qing Dynasty -->
+
+  <section class="container" id="diff">
+    <div class="row">
+    	<!-- Title, 12 grids -->
+      <div class="col-md-12 green">
+        <h1 class="para">
+          <span class="text-wrapper">
+						<span class="letters">Architecture Evolution</span>
+          </span>
+        </h1>
+      </div>
+      <!-- Two cards contains the two architecture, each 6 grids -->
+
+      <div class="section-content">
+      	<!-- The Song Dynasty architecture -->
+        <div class="col-md-6 cards">
+          <div class="card card-song">
+            <div class="card-img-wrapper"><div class="card-img" style="background-image: url('Assets/images/inner-construction-song.png');"></div></div>
+            <div class="para-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+          </div>
+        </div>
+      	<!-- The Qing Dynasty architecture -->
+        <div class="col-md-6">
+          <div class="card card-qing">
+            <div class="card-img-wrapper"><div class="card-img" style="background-image: url('Assets/images/inner-construction-qing.png');"></div></div>
+            <div class="para-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+          </div>
+        </div>
+
+	      <!-- The timeline of Song and Qing, 12 grids -->
+				<div class="col-md-12 timeline">
+					<div class="timeline-line">
+						<div class="timeline-dot timeline-move"></div>
+						<div class="timeline-dot timeline-song"></div>
+						<div class="timeline-dot timeline-qing"></div>
+	  				<div class="timeline-arrow"></div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 timeline-text">
+							Song Dynasty
+						</div>
+						<div class="col-xs-6 timeline-text">
+							Qing Dynasty
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+  </section>
+
+	<!-- Page: The Chinese orders -->
+  <section class="container" id="order">
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+      <div class="section-content">
+	      <!-- The image of the Chinese order, left 1/3 -->
+	      <div class="col-md-4">
+	        <img src="Assets/images/chinese-order-descriptions.jpg" class="img-responsive" alt="Sketches of a Chinese order" />
+	      </div>
+	      <!-- The description of the Chinese Orders, right 2/3 -->
+	      <div class="col-md-8">
+	        <h1 class="para">
+	          <span class="text-wrapper">
+	            <span class="letters">Chinese Order</span>
+	          </span>
+	        </h1>
+	        <div class="para-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+	      </div>
+			</div>
+    </div>
+  </section>
 
 	<!-- Import Skroller.js -->
-	<script type="text/javascript" src="Assets/JS/Library/skrollr.min.js"></script>
+	<script type="text/javascript" src="Assets/JS/Library/skrollr.js"></script>
 	<script type="text/javascript">
 		var s = skrollr.init();//Initialize
 	</script>
+
+	<script type="text/javascript">
+    function moveTimeline(reverse) {
+      var distance = $('.timeline-qing').offset().left - $('.timeline-song').offset().left;
+      var x = reverse ? '-'+distance+'px' : distance+'px';
+      anime({
+        targets: '.timeline-move',
+        translateX: x,
+        scale: {
+          value: 2,
+          delay: 150,
+          duration: 850,
+          easing: [.91,-0.54,.29,1.56]
+        },
+        loop: false
+      });
+    }
+    function moveSongToQing() {
+      moveTimeline(false);
+    }
+    function moveQingToSong() {
+      moveTimeline(true);
+    }
+    function fadeOut() {
+      anime({
+        targets: '.timeline-move',
+        opacity: 0,
+        duration: 1200
+      });
+    }
+
+    function animateSection(section) {
+      anime.timeline({loop: false})
+        .add({
+          targets: section + ' .para .letter',
+          scale: [0, 1],
+          duration: 1500,
+          elasticity: 600,
+          delay: function(el, i) {
+            return 45 * (i+1)
+          }
+        });
+      anime({
+        targets: section + ' .section-content',
+				duration: 1800,
+				opacity: 1,
+				translateY: '-50px',
+				easing: 'easeOutExpo',
+				offset: 0
+      });
+    }
+
+    $(document).ready(function(){
+      $(".card-song").mouseenter(function(){
+        $(".timeline-move").css("left","74%");
+      });
+      $(".card-song").hover(function(){
+          moveQingToSong();
+        },function(){
+          // fadeOut();
+      });
+
+      $(".card-qing").mouseenter(function(){
+        $(".timeline-move").css("left","24%");
+      });
+      $(".card-qing").hover(function(){
+          moveSongToQing();
+          // $(this).find('img').css("transform","scale(1.2)");
+        },function(){
+          // fadeOut();
+          // $(this).find('img').css("transform","scale(1.0)");
+      });
+
+      $(".cards").hover(function(){
+        },function(){
+          // fadeOut();
+      });
+
+      $('.para .letters').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+      });
+
+      $('#diff').mouseenter(function(){
+        animateSection('#diff');
+      });
+      $('#order').mouseenter(function(){
+        animateSection('#order');
+      });
+    });
+  </script>
+
 </body>

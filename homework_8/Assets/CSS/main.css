@@ -4,7 +4,7 @@ html, body {
 	}
 
 .background-slide{
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 }
 
@@ -14,49 +14,48 @@ html, body {
 	justify-content: center;
 	height: 100vh;
 	background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   /* background-size: cover;*/
-    /*height: 100%;*/
-    width: 100%;
-    top:0;
-    left: 0;
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ /* background-size: cover;*/
+  /*height: 100%;*/
+  width: 100%;
+  top:0;
+  left: 0;
 }
 
 #img-homepage{
-	
+
 	/*width: 100vw;*/
 	background:url("../images/bcg-img-homepage.jpg") no-repeat center center;
-	background-size: cover;	
+	background-size: cover;
 }
 
 #img-tower{
 	/*width: 100vw;*/
 	background:url("../images/bcg-img-tower.JPEG") no-repeat center center;
-	background-size: cover;	
+	background-size: cover;
 }
 
 #img3{
 	/*width: 100vw;*/
 	background:url("../images/SectionDrawingBackground.png") no-repeat center center;
-	background-size: cover;	
+	background-size: cover;
 }
 
-body{
+body {
 	/*Use vw to make text responsive to screen*/
-	font-family: Cambria Serif;
 }
 
-p{
+p {
 	font-size:1.5em;
-	font-family: Merriweather-Light;
 	font-size: 20px;
+	font-family: 'Merriweather', serif;
 	color: #FFFFFF;
 	line-height: 32px;
 }
 
-h5{
+h5 {
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 2.5em;
 	position: relative;
 	/*margin-top: 10%;*/
@@ -89,23 +88,25 @@ h5{
 	position: relative;
 	/*margin-top: 10%;*/
 	margin-top: 0;
-	margin-bottom: 5%;
+	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 2%;
+	padding: 4%;
 	text-align: center;
 	width: 80%;
-	
+	color: #E9938A;
 	/*Opacity will inherent to child and make the text also transarent, so I use RGB alpha to make transparent background*/
-	background-color: rgba(250, 250, 250, 0.7);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .introductions{
 	position: relative;
 	margin: 0 10%;
-	padding: 2%;
+	padding: 4%;
+	padding-top: 0;
 	/*Opacity will inherent to child and make the text also transarent, so I use RGB alpha to make transparent background*/
-	background-color: rgba(250, 250, 250, 0.7);
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
 }
 
 /*#caption-2{
@@ -117,42 +118,147 @@ h5{
 	background-color: rgb(71, 123, 192);
 }*/
 
-.red {
-  background: #872;
+body {
+	font-family: 'Merriweather', serif;
+	background: #FFF6E2 !important;
 }
-.yellow {
-  background: #265;
+
+body#root {
+	background: #FFF6E2 !important;
 }
-.green {
-  background: #890;
-}
+
 section {
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  display: -webkit-flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: -webkit-flex;
+}
+.card {
+	overflow: hidden;
+}
+.card:hover .card-img {
+	transform: scale(1.1);
+}
+.card-img-wrapper {
+	height: 300px;
+	overflow: hidden;
+}
+.card-img {
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	transition: all .3s ease-in-out;
+	overflow: hidden;
 }
 .timeline {
-  height: 80px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+	height: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .timeline-line {
-  width: 100%;
-  height: 4px;
-  background: #842;
+	width: 100%;
+	height: 4px;
+	background: #984B43;
 }
 .timeline-dot {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 10px;
-  border-radius: 50%;
-  background: #762;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 10px;
+	border-radius: 50%;
+	background: #762;
 }
 .timeline-song {
-  left: 23%;
+	left: 24%;
 }
 .timeline-qing {
-  right: 23%;
+	left: 74%;
+}
+.timeline-move {
+	left: 74%;
+	border: 4px solid #984B43;
+	background-color: transparent;
+}
+.timeline-text {
+	padding-top: 30px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: #762;
+}
+
+.timeline-arrow {
+  width: 0;
+  height: 0;
+	position: absolute;
+	top: 10px;
+	right: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 24px solid #984B43;
+  float:right;
+}
+
+h1 {
+	color: #984B43;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 36px;
+}
+
+#diff {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#diff h1 {
+	margin-bottom: 70px;
+}
+
+#diff .para-text {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.para {
+	position: relative;
+	font-weight: 200;
+	font-size: 4em;
+}
+.para .text-wrapper {
+	position: relative;
+	display: inline-block;
+	padding-top: 0.2em;
+	padding-right: 0.05em;
+	padding-bottom: 0.1em;
+	overflow: hidden;
+}
+.para .letter {
+	transform-origin: 50% 100%;
+	display: inline-block;
+	line-height: 1em;
+}
+
+.section-content {
+	margin-top: 50px;
+	opacity: 0;
+	cursor: default;
+}
+
+.para-text {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+@media (min-width: 1200px) {
+.container {
+    width: 970px;
+}
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
 }
