@@ -28,7 +28,7 @@
 		<section id="slide-1" class="background-slide">
 			<!-- First image will slightly move when scroll -->
 			<!-- The background image moves up by 10% between the start of the scrolling and when the bottom of the #slide-1 hits the top of the viewport -->
-			<div id="img1" class="img"
+			<div id="img-homepage" class="img"
 				data-center="background-position: 50% 0vh;"
 				data-top-bottom="background-position: 50% -10vh;"
 				data-anchor-target="#slide-1">
@@ -49,7 +49,7 @@
 		</section>
 
 		<!-- Second section: The title bar of transition -->
-		<section id="slide-2">
+		<div id="slide-2">
 			<!-- Title that rotate -->
 			<!-- <div id="rotating-bar-1" class="rotating-bar" 
 				data-0="background-color:rgb(50,80,67);transform:rotate(0deg);opacity: 0;" 
@@ -58,26 +58,30 @@
 			</div> -->
 
 			<!-- Background color of the title changes with scrolling -->
-			<div id="caption-2" class="caption"
-				data-0="background-color:rgb(1,27,59);"
-				data-top="background-color:(0,0,0);"
-				data-anchor-target="#slide-2">
-				<!-- The title fades in and out with scrolling -->
-				<h5 class="white"
-					data--30p-bottom="opacity: 0"
-					data-70p="opacity: 1"
-					data-20p-top="opacity: 1"
-					data-10p-top="opacity: 0"
-					data-anchor-target="#slide-2 h5">
-					WHAT IS THE TRUSS?
-				</h5>
+			<div id="bcg-color-blue"
+				data-0="background-color:rgb(71, 123, 192);"
+				data-top="background-color:rgb(129, 121, 115);">
+				<div id="caption-2" class="caption"
+					data-0="background-color:rgb(74, 42, 48);width:50%;"
+					data-top="background-color:(0,0,0);width:100%;"
+					data-anchor-target="#slide-2">
+					<!-- The title fades in and out with scrolling -->
+					<h5 class="white"
+						data--30p-bottom="opacity: 0"
+						data-70p="opacity: 1"
+						data-20p-top="opacity: 1"
+						data-2p-top="opacity: 0"
+						data-anchor-target="#slide-2 h5">
+						WHAT IS THE TRUSS?
+					</h5>
+				</div>
 			</div>			
-		</section>
+		</div>
 
 		
 		<section id="slide-3" class="background-slide">
 			<!-- The background image will slightly move upward when scrolling -->
-			<div id="img2" class="img"
+			<div id="img-tower" class="img"
 				data-center="background-position: 0px 50%; width: 100%; top: 0%; left: 0%;"
 				data-bottom-top="background-position: 0px 40%;background-attachment: fixed;"
 				data-top-bottom="background-position: -40px 50%; width: 156%; top: -28%; left: -28%;"
@@ -97,8 +101,57 @@
 			</div>			
 		</section>
 	</div>
-		
+	
+	<!--Page: The Comparison of Architecture in the Song Dynasty and the Qing Dynasty -->
+  <section class="container">
+    <div class="row">
+    	<!-- Title, 12 grids -->
+      <div class="col-md-12 green">
+        <h1>Difference between architectures in the Song Dynasty and the Qing Dynasty</h1>
+      </div>
+      <!-- Two cards contains the two architecture, each 6 grids -->
+      <div class="col-md-6">
+      	<!-- The Song Dynasty architecture -->
+        <div class="card card-song">
+          <img src="Assets/images/inner-construction-song.png" class="img-responsive" alt="Sketches of architecture in the Qing Dynasty" />
+          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div>
+      </div>
+      <!-- The Qing Dynasty architecture -->
+      <div class="col-md-6">
+        <div class="card card-qing">
+          <img src="Assets/images/inner-construction-qing.png" class="img-responsive" alt="Sketches of architecture in the Song Dynasty" />
+          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div>
+      </div>
 
+      <!-- The timeline of Song and Qing, 12 grids -->
+      <div class="col-md-12 timeline">
+        <div class="timeline-line">
+          <div class="timeline-dot timeline-song"></div>
+          <div class="timeline-dot timeline-qing"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+	<!-- Page: The Chinese orders -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-12 green">
+        <h1>Chinese Order</h1>
+      </div>
+      <!-- The image of the Chinese order, left 1/3 -->
+      <div class="col-md-4">
+        <img src="Assets/images/chinese-order.jpeg" class="img-responsive" alt="Sketches of a Chinese order" />
+      </div>
+      <!-- The description of the Chinese Orders, right 2/3 -->
+      <div class="col-md-8">
+        <h2>Chinese Order</h2>
+        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+      </div>
+    </div>
+  </section>
 
 	<!-- Import Skroller.js -->
 	<script type="text/javascript" src="Assets/JS/Library/skrollr.js"></script>
